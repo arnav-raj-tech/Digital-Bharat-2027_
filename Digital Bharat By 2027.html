@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Bharat - Interactive Zones</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.twi-global.com/image-library/hero/istock-1095801920-smart-city.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            color: #fff;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            color: #fff;
+        }
+        nav a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 10px;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        .zone-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        .zone {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+            margin: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+        .zone:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .zone i {
+            font-size: 50px;
+            color: #4CAF50;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Digital Bharat</h1>
+    <nav>
+        <a href="#education">Education</a>
+        <a href="#healthcare">Healthcare</a>
+        <a href="#transport">Transport</a>
+        <a href="#greenEnergy">Green Energy</a>
+    </nav>
+</header>
+
+<div class="zone-container">
+    <div class="zone" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-book-open"></i>
+        <h3>AI-Driven Education</h3>
+        <p>Empowering students with digital tools and interactive learning.</p>
+        <button onclick="window.location.href='education.html'">Explore</button>
+    </div>
+    <div class="zone" data-aos="fade-up" data-aos-delay="200">
+        <i class="material-icons">local_hospital</i>
+        <h3>Telemedicine</h3>
+        <p>Access healthcare remotely with digital solutions.</p>
+        <button onclick="window.location.href='healthcare.html'">Explore</button>
+    </div>
+    <div class="zone" data-aos="fade-up" data-aos-delay="300">
+        <i class="material-icons">directions_bus</i>
+        <h3>Smart Transit</h3>
+        <p>Integrated transit systems for smooth urban mobility.</p>
+        <button onclick="window.location.href='transport.html'">Explore</button>
+    </div>
+    <div class="zone" data-aos="fade-up" data-aos-delay="400">
+        <i class="material-icons">solar_power</i>
+        <h3>Renewable Energy</h3>
+        <p>Harness the power of renewable energy for a sustainable future.</p>
+        <button onclick="window.location.href='greenEnergy.html'">Explore</button>
+    </div>
+</div>
+
+<footer>
+    <p>A Layout Of 2027's Digital Bharat By Arnav Raj<p>
+</footer>
+
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Zone</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f1f1f1; }
+        header { background-color: #333; color: #fff; text-align: center; padding: 20px; }
+        header h1 { font-size: 2.5em; }
+        .content { max-width: 1200px; margin: 0 auto; padding: 40px; }
+        .card { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin-bottom: 20px; }
+        .card h3 { color: #4CAF50; }
+        .card p { color: #333; }
+        footer { background-color: #333; color: #fff; text-align: center; padding: 20px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Healthcare Zone</h1>
+</header>
+
+<div class="content">
+    <div class="card" data-aos="fade-up">
+        <h3>Telemedicine</h3>
+        <p>Access healthcare remotely with our telemedicine services.</p>
+        <!-- Updated embed URL for Telemedicine -->
+        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/C6cr__DNnnU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="card" data-aos="fade-up">
+        <h3>AI for Diagnostics</h3>
+        <p>AI-driven platforms for diagnosing diseases and treatment suggestions.</p>
+        <!-- Updated embed URL for AI for Diagnostics -->
+        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/mhEYvrFOP88" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="card" data-aos="fade-up">
+        <h3>Health Statistics</h3>
+        <canvas id="healthcareChart"></canvas>
+        <script>
+            var ctx = document.getElementById('healthcareChart').getContext('2d');
+            var healthcareChart = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['AI-driven Diagnosis', 'Manual Diagnosis'],
+                    datasets: [{
+                        label: 'Diagnosis Accuracy',
+                        data: [90, 70],
+                        backgroundColor: ['#4CAF50', '#2196F3'],
+                    }]
+                }
+            });
+        </script>
+    </div>
+</div>
+
+<footer>
+    <p>A Layout Of 2027's Digital Bharat By Arnav Raj<p>
+</footer>
+
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Zone</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f1f1f1; }
+        header { background-color: #333; color: #fff; text-align: center; padding: 20px; }
+        header h1 { font-size: 2.5em; }
+        .content { max-width: 1200px; margin: 0 auto; padding: 40px; }
+        .card { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin-bottom: 20px; }
+        .card h3 { color: #4CAF50; font-size: 1.8em; }
+        .card p { color: #333; font-size: 1.1em; }
+        iframe { border-radius: 8px; margin-top: 20px; }
+        footer { background-color: #333; color: #fff; text-align: center; padding: 20px; }
+        footer p { margin: 0; font-size: 1em; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Education Zone</h1>
+</header>
+
+<div class="content">
+    <div class="card" data-aos="fade-up">
+        <h3>AI-Driven Education</h3>
+        <p>Revolutionizing education through AI-powered tools and platforms.</p>
+        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/uZ73ZsBkcus" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="card" data-aos="fade-up">
+        <h3>Interactive Learning Platforms</h3>
+        <p>AI-assisted platforms bringing personalized learning experiences to students.</p>
+        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/xMajRhCYCnQ?si=PCFrhpxoRvu0Ig7X" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="card" data-aos="fade-up">
+        <h3>AI Learning Statistics</h3>
+        <canvas id="educationChart"></canvas>
+        <script>
+            var ctx = document.getElementById('educationChart').getContext('2d');
+            var educationChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['AI', 'Human Learning'],
+                    datasets: [{
+                        label: 'Learning Efficiency',
+                        data: [85, 60],
+                        backgroundColor: ['#4CAF50', '#2196F3'],
+                    }]
+                }
+            });
+        </script>
+    </div>
+</div>
+
+<footer>
+    <p>A Layout Of 2027's Digital Bharat By Arnav Raj<p>
+</footer>
+
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
